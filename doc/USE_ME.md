@@ -206,30 +206,14 @@ You may opt to something like this:
     "sources" : [
         {
             "type" : "git",
-            "path" : "/home/felix/Proyectos/GraniteTemplate"
+            "path" : "/home/felix/Proyectos/com.felixbrezo.GraniteTemplate"
         }
     ]
 }
 …
 ```
 
-However, note that this approach uses the `git` manifest source. This is important because it will match against the last commit performed (or, if provided in an optional `commit` parameter, to that specific commit). As this is sometimes messy since you need to add and commit the changes (and I tipically forget that when testing), I prefer usin this:
-
-```
-…
-{
-    "name" : "com.felixbrezo.GraniteTemplate",
-    "builddir" : true,
-    "buildsystem" : "meson",
-    "sources" : [
-        {
-            "type" : "git",
-            "path" : "/home/felix/Proyectos/GraniteTemplate"
-        }
-    ]
-}
-…
-```
+However, note that this approach uses the `git` manifest source. This is important because it will match against the last commit performed (or, if provided in an optional `commit` parameter, to that specific commit). 
 
 Once defined, you can now build the Flatpak:
 
