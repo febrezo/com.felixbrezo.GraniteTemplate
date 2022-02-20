@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.felixbrezo.GraniteTemplate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 09:19+0200\n"
+"POT-Creation-Date: 2022-02-20 21:09+0100\n"
 "PO-Revision-Date: 2020-06-22 21:40+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,11 +30,11 @@ msgid "Just another template"
 msgstr ""
 
 #: data/com.felixbrezo.GraniteTemplate.desktop.in:6
-msgid "A template for developing new Vala applications"
+msgid "A template for developing new Vala applications using Flatpak"
 msgstr ""
 
-#: data/com.felixbrezo.GraniteTemplate.desktop.in:10
-msgid "computer-laptop"
+#: data/com.felixbrezo.GraniteTemplate.desktop.in:9
+msgid "com.felixbrezo.GraniteTemplate"
 msgstr ""
 
 #: data/com.felixbrezo.GraniteTemplate.desktop.in:12
@@ -42,32 +42,24 @@ msgid "Development;Personal;"
 msgstr ""
 
 #: data/com.felixbrezo.GraniteTemplate.appdata.xml.in:9
-msgid "A template for developing new Vala applications."
+msgid "A template for developing new Vala applications using Flatpak."
 msgstr ""
 
-#: src/Window.vala:100
-msgid "english"
-msgstr ""
-
-#: src/Window.vala:100
-msgid "Hello hackers! I am a computer!"
-msgstr ""
-
-#: src/Window.vala:111
+#: src/Window.vala:112
 msgid "Nothing done because something wrong happened"
 msgstr ""
 
-#: src/Window.vala:119
+#: src/Window.vala:120
 msgid "https://github.com/febrezo/valoro/master/doc/support/en/"
 msgstr ""
 
 #: src/gui/AboutDialog.vala:41
-msgid "Félix Brezo (felixbrezo@disroot.org)"
-msgstr ""
+msgid "Félix Brezo (contacto@felixbrezo.com)"
+msgstr "Félix Brezo (contacto@felixbrezo.com)"
 
 #: src/gui/AboutDialog.vala:45
-msgid "Copyright © 2020 Félix Brezo"
-msgstr ""
+msgid "Copyright © 2020-2022 Félix Brezo"
+msgstr "Copyright @ 2020-2022 Félix Brezo"
 
 #: src/gui/AboutDialog.vala:46
 msgid "1.0"
@@ -120,10 +112,7 @@ msgstr ""
 #: src/gui/SampleDialog.vala:50
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in ligula "
-"sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis "
-"metus magna. Curabitur id metus volutpat risus sodales pretium. Vestibulum "
-"ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; "
-"Morbi rutrum dictum egestas. Mauris semper suscipit massa vitae facilisis. "
+"sem."
 msgstr ""
 
 #: src/gui/SettingsMenu.vala:35

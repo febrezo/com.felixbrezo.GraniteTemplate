@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2020 Félix Brezo (https://felixbrezo.com)
+* Copyright (c) 2020-2022-2022 Félix Brezo (https://felixbrezo.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,7 +16,7 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Félix Breo <felixbrezo@disroot.orgm>
+* Authored by: Félix Brezo <contacto@felixbrezo.comm>
 */
 
 using AppUtils;
@@ -33,16 +33,16 @@ namespace AppWidgets {
         construct {
             this.set_destroy_with_parent (true);
           	this.set_modal (true);
-            this.logo_icon_name = "computer-laptop";
+            this.logo_icon_name = "help-about";
 
           	this.artists = null;
-          	this.authors = {"Félix Brezo (felixbrezo@disroot.org)"};
-          	this.documenters = {"Félix Brezo (felixbrezo@disroot.org)"};
-          	this.translator_credits = _("Félix Brezo (felixbrezo@disroot.org)");
+          	this.authors = {"Félix Brezo (contacto@felixbrezo.com)"};
+          	this.documenters = {"Félix Brezo (contacto@felixbrezo.com)"};
+          	this.translator_credits = _("Félix Brezo (contacto@felixbrezo.com)");
 
           	this.program_name = _("GraniteTemplate");
           	this.comments = _("Just another template");
-          	this.copyright = _("Copyright © 2020 Félix Brezo");
+          	this.copyright = _("Copyright © 2020-2022 Félix Brezo");
           	this.version = _("1.0");
 
           	this.license = "GPLv3.0+ (https://www.gnu.org/licenses/gpl-3.0.txt)";

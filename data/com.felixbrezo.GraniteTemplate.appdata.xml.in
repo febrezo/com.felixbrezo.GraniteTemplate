@@ -6,7 +6,7 @@
   <name>GraniteTemplate</name>
   <summary>Just another template</summary>
   <description>
-    <p>A template for developing new Vala applications.</p>
+    <p>A template for developing new Vala applications using Flatpak.</p>
   </description>
   <custom>
     <value key="x-appcenter-color-primary">#603461</value>

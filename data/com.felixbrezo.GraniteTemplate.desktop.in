@@ -2,7 +2,7 @@
 
 Name=GraniteTemplate
 GenericName=Just another template
-Comment=A template for developing new Vala applications
+Comment=A template for developing new Vala applications using Flatpak
 Categories=Utility;
 Exec=com.felixbrezo.GraniteTemplate
 Icon=com.felixbrezo.GraniteTemplate

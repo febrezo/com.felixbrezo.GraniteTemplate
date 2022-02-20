@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2020 Félix Brezo (https://felixbrezo.com)
+* Copyright (c) 2020-2022 Félix Brezo (https://felixbrezo.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,7 +16,7 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Félix Breo <felixbrezo@disroot.orgm>
+* Authored by: Félix Brezo <contacto@felixbrezo.com>
 */
 
 using AppUtils;
@@ -47,7 +47,7 @@ namespace AppWidgets {
             title_label.halign = Gtk.Align.START;
             title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-            body_label = new Gtk.Label (_("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in ligula sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis metus magna. Curabitur id metus volutpat risus sodales pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi rutrum dictum egestas. Mauris semper suscipit massa vitae facilisis. "));
+            body_label = new Gtk.Label (_("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in ligula sem."));
 
             // Pack grid elements together together
             var ask_for_asset_widget = new Gtk.Grid ();

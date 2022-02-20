@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2020 Félix Brezo (https://felixbrezo.com)
+* Copyright (c) 2020-2022 Félix Brezo (https://felixbrezo.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,7 +16,7 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Félix Breo <felixbrezo@disroot.orgm>
+* Authored by: Félix Brezo <contacto@felixbrezo.com>
 */
 
 using AppUtils;

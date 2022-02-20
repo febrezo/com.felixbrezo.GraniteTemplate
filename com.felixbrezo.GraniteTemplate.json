@@ -1,10 +1,8 @@
 {
     "app-id" : "com.felixbrezo.GraniteTemplate",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "40",
-    "base" : "io.elementary.BaseApp",
-    "base-version" : "juno-20.08",
-    "sdk" : "org.gnome.Sdk",
+    "runtime" : "io.elementary.Sdk",
+    "runtime-version" : "6",
+    "sdk" : "io.elementary.Sdk",
     "command" : "com.felixbrezo.GraniteTemplate",
     "finish-args" : [
         "--share=network",
@@ -14,7 +12,7 @@
         "--filesystem=home",
         "--talk-name=org.gnome.SessionManager",
         "--metadata=X-DConf=migrate-path=com/felixbrezo/GraniteTemplate/",
-    		"--socket=pulseaudio",
+        "--socket=pulseaudio",
         "--device=dri"
     ],
     "cleanup": [
@@ -31,8 +29,8 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "path" : "https://github.com/febrezo/com.felixbrezo.GraniteTemplate"
+                    "type" : "dir",
+                    "path" : "."
                 }
             ]
         }
