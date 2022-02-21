@@ -1,6 +1,7 @@
 import os
 from os import listdir
 from os.path import isfile, join
+from pathlib import Path
 import sys
 
 
@@ -14,8 +15,13 @@ def main (rdnn):
 
     base_path = join(os.path.abspath(os.path.dirname(__file__)), "..")
     result = [os.path.join(dp, f) for dp, dn, filenames in os.walk(base_path) for f in filenames if os.path.splitext(f)[1] in ['.build', '.vala', '.in', '.json', '.md', '.vala', '.pot', '.po', 'POTFILES', ".svg"] ]
+    result.append(os.path.join(base_path, "Makefile"))
+    result.append(os.path.join(base_path, "po", "POTFILES"))
 
     for file_path in result:
+        current_file_name = Path(file_path).name
+        current_folder_name = os.path.dirname(file_path)
+
         if ".py" not in file_path and "build-dir" not in file_path and ".flatpak-builder" not in file_path:
             with open (file_path) as file:
                 contents = file.read ()
@@ -25,14 +31,14 @@ def main (rdnn):
             new_path = rdnn.replace (".", "/")
             contents = contents.replace ("com/felixbrezo/GraniteTemplate", new_path)
 
-            if "com.felixbrezo.GraniteTemplate" not in file_path:
+            if "com.felixbrezo.GraniteTemplate" not in current_file_name:
                 with open (file_path, "w") as file:
                     file.write (contents)
             else:
-                new_path = file_path.replace ("com.felixbrezo.GraniteTemplate", rdnn)
-                with open (new_path, "w") as file:
-                    file.write (contents)
-                os.remove (file_path)
+                new_path = current_file_name.replace("com.felixbrezo.GraniteTemplate", rdnn)
+                with open(join(current_folder_name, new_path), "w") as file:
+                    file.write(contents)
+                os.remove(file_path)
 
 
 if __name__ == "__main__":
